@@ -1,0 +1,24 @@
+#include<stdio.h>
+main()
+{
+	char* p = "peach";
+
+	char data1[10] = "banana", * p_data1;
+
+	char data2[10], * p_data2;
+
+
+	p_data1 = data1;
+	p_data2 = data2;
+
+	while (*p_data2++ = *p_data1++);	//++‚Å—v‘f‚ªi‚ñ‚Å‚é
+
+	p_data1 = data1;					//++‚Åi‚ñ‚¾—v‘f‚ğ–ß‚·‚½‚ß‚Ì‘ã“ü
+
+	while (*p_data1++ = *p++);
+
+	printf("data1[]=%s",data1);
+	
+	printf("\ndata2[]=%s\n",data2);
+	
+}

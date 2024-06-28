@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+main()
+{
+	int kazu,z,a;
+
+	printf("1-1000ÇÃíÜÇ≈ìñÇΩÇËÇÃêîÇó\ëzÇµÇƒÇ≠ÇæÇ≥Ç¢\n\n");
+
+	srand(time(0));
+	rand();
+	kazu = rand() % 1000 + 1 ;
+	
+	for (z = 0; kazu != z; a++)
+	{
+		printf("ìñÇΩÇËÇÃêîÇÕÅH\n");
+			scanf("%d", &z);
+			if (kazu > z)
+			{
+				printf("ìñÇΩÇËÇÊÇËè¨Ç≥Ç¢\n");
+			}
+			if (kazu < z)
+			{
+				printf("ìñÇΩÇËÇÊÇËëÂÇ´Ç¢\n");
+			}
+	}
+	printf("ê≥âÅI%dâÒñ⁄Ç≈ê≥âÇµÇΩ\n", a);
+	printf("ê≥âÇÕ%dÇ≈ÇµÇΩ\n", kazu);
+}
